@@ -1,15 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Hello from 'components/Hello';
+import logo from './assets/logo.svg';
 import './App.css';
 
-function App() {
+const title = {
+  lTitle: {
+    content: 'App.js and save to reload.',
+  },
+};
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Hello />
+        <p>{title?.lTitle?.content}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,6 +26,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
