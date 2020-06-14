@@ -1,4 +1,4 @@
-'use strict';
+
 
 const path = require('path');
 const fs = require('fs');
@@ -45,7 +45,7 @@ const resolveModule = (resolveFn, filePath) => {
     return resolveFn(`${filePath}.${extension}`);
   }
 
-  return resolveFn(`${filePath}.js`);
+  return resolveFn(`${filePath}`);
 };
 
 // config after eject: we're in ./config/
