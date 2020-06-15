@@ -6,7 +6,6 @@ const root = __dirname;
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
     node: true,
     es6: true,
     mocha: true,
@@ -39,7 +38,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'generator-star-spacing': 0,
     'function-paren-newline': 0,
-    'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
+    'import/no-unresolved': [2, { ignore: ['^@/', '^component/', '.', '^umi/'] }],
     'import/order': 'warn',
     'import/no-extraneous-dependencies': [
       2,
@@ -96,7 +95,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: path.resolve(root, 'config/webpack.config.js'),
+        config: './config/webpack.config.js',
       },
       node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     },

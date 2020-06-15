@@ -1,5 +1,4 @@
 /scripts
 /config
 .history
-src
-/src
+/node_modules
