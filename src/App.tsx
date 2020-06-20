@@ -1,6 +1,6 @@
 import React from 'react';
 import Hello from 'components/Hello';
-import logo from './assets/logo.png';
+import logo from 'assets/logo.png';
 import styles from './App.less';
 
 // const title = {
@@ -8,6 +8,7 @@ import styles from './App.less';
 //     content: 'App.js and save to reload.',
 //   },
 // };
+
 const App = () => (
   <div className={styles.App}>
     <header className={styles.AppHeader}>
